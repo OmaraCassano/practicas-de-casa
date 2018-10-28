@@ -1,0 +1,14 @@
+# practicas-de-casa 
+link de 04 arrays teoria: https://docs.google.com/presentation/d/1QIus75geOYxPzan-Drb2Rqq_MDbRMf2duwdAxF5pBFw/edit#slide=id.p36
+____________________________________________________________________________________________________________________________
+1er ejemplo: Escribir un Programa, que permita leer 10 notas de tipo float y luego imprima:
+El promedio
+Las notas que están por encima del promedio
+El promedio eliminando la menor nota.
+____________________________________________________________________________________________________________________________
+2do ejemplo:Escribir un programa para hallar la unión y la intersección de dos conjuntos de números enteros.
+Para representar los conjuntos se utilizará arrays 
+El programa leerá los números y los irá almacenando en los  arrays cuidando de no tener datos repetidos.
+____________________________________________________________________________________________________________________________
+3er ejemplo: Escribir un programa que permita contar cuántas veces aparece cada letra del alfabeto inglés en un archivo texto. 
+El programa leerá como dato el nombre físico del archivo texto.
