@@ -1,0 +1,10 @@
+# practicas-de-casa 
+link de 04 arrays teoria: https://docs.google.com/presentation/d/1QIus75geOYxPzan-Drb2Rqq_MDbRMf2duwdAxF5pBFw/edit#slide=id.p36
+____________________________________________________________________________________________________________________________
+
+____________________________________________________________________________________________________________________________
+
+____________________________________________________________________________________________________________________________
+1er ejemplo: Escribir un Programa en C++, que permita generar aleatoriamente dos arrays de 20 números enteros, cuyos valores estén entre 
+1 y 99, los muestre en pantalla y luego halle e imprima un tercer array, que contenga la suma de los elementos del array 1 y el array 2.
+
