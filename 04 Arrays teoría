@@ -5,6 +5,85 @@ ________________________________________________________________________________
 El promedio
 Las notas que están por encima del promedio
 El promedio eliminando la menor nota.
+
+#include <iostream>
+#include <stdlib.h>
+#include <time.h>
+#include <string>
+#include <iomanip>
+
+using namespace std;
+
+void leenotas();
+float promedio();
+void notasmayorpromedio();
+float menornota();
+float nuevopromedio(); //sin la menor nota
+
+void leenotas (float notas[], int n){ //se va a leer las notas hasta n y se ponen en una matriz
+    cout << "Ingrese por favor las notas: "<< endl;
+    for (int i = 0; i < n ; ++i) {
+        cin>> notas[i];
+    }
+}
+
+float promedio (float notas[], int n){
+    float suma = 0;
+    for (int i = 0; i < n; ++i) {
+        suma += notas[i];
+    }
+    float prom = ((suma)/n);
+    return prom;
+}
+
+void notasmayorpromedio (float notas [],int n, float prom){
+    for (int i = 0; i < n; ++i) {
+       if(notas[i]>prom)
+           cout<<notas[i]<< endl ;
+    }
+}
+
+float menorNota(float notas[], int n){
+      float menornota;
+      menornota = notas[0];
+      for (int i = 1; i < n; ++i) {
+         if(notas[i]<menornota)
+            menornota=notas[i];
+    }
+    return menornota;
+}
+
+float nuevopromedio(float notas[], int n, float menornota){ //promedio eliminando la nota más baja
+    float  suma = 0;
+    for (int i = 0; i <n ; ++i) {
+        if (notas[i] != menornota )
+            suma += notas[i];
+    }
+    float newprom = suma/n;
+    return  newprom;
+}
+
+int main()
+{
+    int x, y;
+    float notas[100];
+    float prom, menornota, newprom ;
+
+    cout <<"Ingrese el nro de notas:"<<endl;
+    cin >> x;
+    y= x-1;
+
+    leenotas(notas, x);
+    prom = promedio(notas,x);
+    cout <<"El promedio es : "<< prom <<endl;
+    cout << "Las notas que estan por encima del promedio son: "<< endl;
+    notasmayorpromedio(notas,x, prom);
+    float notamasbaja= menorNota(notas,x);      //hallandomenota
+    cout<<"La menor nota es: "<< notamasbaja << endl;
+    newprom =  nuevopromedio(notas, y, notamasbaja);
+    cout <<"El promedio eliminando la menor nota es: " << newprom <<endl;
+}
+
 ____________________________________________________________________________________________________________________________
 2do ejemplo:Escribir un programa para hallar la unión y la intersección de dos conjuntos de números enteros.
 Para representar los conjuntos se utilizará arrays 
